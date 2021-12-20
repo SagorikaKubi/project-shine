@@ -1,0 +1,370 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*******************************  HEADER PART *****************************************/
+header {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+header > img {
+  height: 100%;
+  width: 100%;
+}
+
+/******************* NAVBAR  ********************/
+nav {
+  height: 70px;
+  /* background-color: blueviolet; */
+  background-color: rgb(103, 67, 146);
+  line-height: 50px;
+  padding: 0 15px 0 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.logo {
+  width: 200px;
+  float: left;
+  margin: 15px 0 0 20px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul > li {
+  list-style: none;
+  /* float: right; */
+  padding: 10px;
+}
+
+ul li a:hover {
+  background-color: #8451d8;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+nav ul li .icon {
+  color: white;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #9461e7;
+  margin-top: 8px;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+  z-index: 1;
+}
+
+.dropdown li {
+  line-height: 20px;
+}
+
+.dropdown a {
+  font-size: 16px;
+}
+
+/********************** HEADER DESCRIPTION PART *****************/
+.header-description {
+  text-align: center;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  line-height: 40px;
+  /* background-color: rgba(116, 97, 241, 0.5); */
+  background-color: rgb(70, 43, 111, 0.7);
+  padding-bottom: 200px;
+  margin: 0;
+}
+
+.header-info {
+  margin-top: 150px;
+  line-height: 50px;
+}
+
+.header-info h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.header-info p {
+  font-size: 28px;
+  color: white;
+}
+
+.btn {
+  margin: 20px;
+  font-size: 14px;
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(224, 113, 121);
+}
+
+/************************************ ABOUT SECTION *******************************************/
+
+/******** ALL SECTION DESCRIPTION PART  ******/
+.section-heading-description {
+  /* height: 150px; */
+  text-align: center;
+  padding: 70px 90px;
+  background-color: rgb(243, 247, 250);
+  line-height: 30px;
+}
+
+.section-heading-description h1 {
+  font-size: 32px;
+  margin: 20px auto 30px;
+  color: rgb(70, 43, 111);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-heading-description p {
+  font-size: 20px;
+  color: rgb(116, 114, 114);
+}
+
+/****************** PROJECTS ******************/
+.projects,
+.services {
+  display: flex;
+  /* margin-bottom: 100px; */
+  /* border: 1px solid blue; */
+}
+
+.project,
+.service {
+  position: relative;
+  height: 450px;
+  width: 700px;
+  /* border: 1px solid red; */
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
+.new-project-info {
+  height: 250px;
+  width: 300px;
+  background-color: rgb(70, 43, 111, 0.8);
+  position: absolute;
+  top: 30px;
+  padding: 20px;
+  margin: 80px 150px;
+  color: white;
+  line-height: 25px;
+  text-align: center;
+}
+
+.new-project-info h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.new-project-info p {
+  margin-bottom: 25px;
+}
+
+.project-work-category {
+  height: 450px;
+  width: 600px;
+  padding: 50px 80px;
+}
+
+.project-work-category h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: rgba(62, 17, 129, 0.8);
+  font-weight: 500;
+}
+
+.work-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-top: 30px;
+}
+
+.work-category {
+  border: 1px solid #9461e7;
+  height: 100px;
+  text-align: center;
+  padding: 15px;
+}
+
+.work-category p {
+  font-size: 18px;
+  color: rgb(116, 114, 114);
+}
+
+.work-category-icons {
+  font-size: 30px;
+}
+
+.work-category:hover p,
+.work-category-icons {
+  color: rgb(224, 113, 121);
+}
+
+/******************************** SERVICE SECTION  **********************************/
+.service-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 20px;
+  grid-gap: 10px;
+}
+
+.single-service {
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgb(204, 203, 203);
+  padding: 30px;
+}
+
+.single-service h1,
+.blog h1 {
+  color: rgba(62, 17, 129, 0.7);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.single-service p,
+.blog p {
+  line-height: 25px;
+  color: rgb(116, 114, 114);
+}
+
+/************ service image  div *********/
+.service-img-box {
+  height: 450px;
+  width: 580px;
+  /* border: 1px solid blue; */
+}
+.service-img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/******************************** BLOG SECTION  ****************************************/
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.blog {
+  height: 230px;
+  width: 320px;
+  /* border: 2px solid red; */
+}
+
+.blog-info {
+  padding: 30px;
+}
+
+.blog img {
+  height: 100%;
+  width: 100%;
+}
+
+.blog button {
+  border-style: none;
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgb(224, 113, 121);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/******************************** FOOTER ****************************/
+.footer {
+  height: 300px;
+  background-color: rgb(69, 33, 105);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.summary {
+  height: 300px;
+  /* border: 1px solid red; */
+}
+
+.summary h1 {
+  font-size: 20px;
+  color: #fff;
+  margin: 60px 20px 20px 30px;
+  text-transform: uppercase;
+}
+
+.summary p {
+  color: #fff;
+  line-height: 25px;
+  margin: 0 30px;
+}
+
+.summary p a {
+  color: #fff;
+  text-decoration: none;
+}
+.summary p a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.summary img {
+  margin: 50px 0 20px 30px;
+}
+
+.summary-row-1 {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.social-media-icons {
+  margin: 20px 0 0 30px;
+}
+
+.social-media-icons i {
+  margin: 5px;
+  color: rgb(224, 113, 121);
+  font-size: 18px;
+}
+
+.copyright {
+  height: 60px;
+  background-color: rgb(103, 67, 146);
+  text-align: center;
+  padding: 22px;
+  color: #fff;
+}
+
+.copyright-icon {
+  font-size: 12px;
+}
