@@ -83,6 +83,7 @@ nav > ul > li:hover > ul {
   font-size: 16px;
 }
 
+/****** media query ******/
 @media (max-width: 992px) {
   nav > ul {
     justify-content: center;
@@ -101,6 +102,8 @@ nav > ul > li:hover > ul {
   padding-bottom: 200px;
   margin: 0;
 }
+
+/****** media query ******/
 @media (max-width: 668px) {
   .header-description {
     top: 0px;
@@ -248,6 +251,7 @@ nav > ul > li:hover > ul {
   color: rgb(224, 113, 121);
 }
 
+/****** media query ******/
 @media (max-width: 668px) {
   .projects,
   .services {
@@ -260,7 +264,7 @@ nav > ul > li:hover > ul {
   }
   .project-categories {
     height: 750px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
   .new-project-info {
     height: 260px;
@@ -272,7 +276,7 @@ nav > ul > li:hover > ul {
     height: 750px;
     width: 340px;
     padding: 50px 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .project-work-category h1 {
     font-size: 24px;
@@ -325,11 +329,34 @@ nav > ul > li:hover > ul {
   height: 100%;
 }
 
+/****** media query ******/
+@media (max-width: 668px) {
+  .service {
+    height: 650px;
+  }
+  .service-categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-img-box {
+    height: 300px;
+    width: 340px;
+    /* border: 1px solid rgb(255, 0, 0); */
+  }
+}
+
 /******************************** BLOG SECTION  ****************************************/
 .blogs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
+/****** media query ******/
+@media (max-width: 668px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .blog {
   height: 230px;
   width: 320px;
@@ -372,6 +399,22 @@ nav > ul > li:hover > ul {
   color: #fff;
   margin: 60px 20px 20px 30px;
   text-transform: uppercase;
+}
+
+/****** media query ******/
+@media (max-width: 668px) {
+  .footer {
+    height: 1000px;
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 1px solid rgb(255, 0, 0); */
+  }
+  .summary {
+    height: 250px;
+    /* border: 1px solid blue; */
+  }
+  .summary h1 {
+    margin: 20px 20px 20px 30px;
+  }
 }
 
 .summary p {
