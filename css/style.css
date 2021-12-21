@@ -80,6 +80,12 @@ nav > ul > li:hover > ul {
   font-size: 16px;
 }
 
+@media (max-width: 992px) {
+  nav > ul {
+    justify-content: center;
+  }
+}
+
 /********************** HEADER DESCRIPTION PART *****************/
 .header-description {
   text-align: center;
@@ -231,6 +237,13 @@ nav > ul > li:hover > ul {
 .work-category:hover p,
 .work-category-icons {
   color: rgb(224, 113, 121);
+}
+
+@media (max-width: 668px) {
+  .projects,
+  .services {
+    display: block;
+  }
 }
 
 /******************************** SERVICE SECTION  **********************************/
