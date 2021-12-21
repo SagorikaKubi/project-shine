@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  margin: auto;
+}
 
 /*******************************  HEADER PART *****************************************/
 header {
@@ -97,6 +100,12 @@ nav > ul > li:hover > ul {
   background-color: rgb(70, 43, 111, 0.7);
   padding-bottom: 200px;
   margin: 0;
+}
+@media (max-width: 668px) {
+  .header-description {
+    top: 0px;
+    padding-bottom: 122px;
+  }
 }
 
 .header-info {
@@ -243,6 +252,36 @@ nav > ul > li:hover > ul {
   .projects,
   .services {
     display: block;
+  }
+  .project,
+  .service {
+    height: 400px;
+    width: 340px;
+  }
+  .project-categories {
+    height: 750px;
+    border: 2px solid green;
+  }
+  .new-project-info {
+    height: 260px;
+    width: 280px;
+    padding: 12px;
+    margin: 35px 30px;
+  }
+  .project-work-category {
+    height: 750px;
+    width: 340px;
+    padding: 50px 40px;
+    border: 1px solid red;
+  }
+  .project-work-category h1 {
+    font-size: 24px;
+  }
+  .work-categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .work-category {
+    height: 80px;
   }
 }
 
